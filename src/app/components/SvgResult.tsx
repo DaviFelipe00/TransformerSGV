@@ -43,9 +43,20 @@ export default function SvgResult({ svg, loading, image }: Props) {
             </div>
           </div>
 
+          {/* 🔥 Botão MAIS VISÍVEL (azul sólido, hover e sombra) */}
           <button
             onClick={download}
-            className="w-full bg-secondary text-white font-semibold py-3 px-6 rounded-lg"
+            className="
+              w-full 
+              bg-blue-600 
+              hover:bg-blue-700 
+              text-white 
+              font-semibold 
+              py-3 px-6 
+              rounded-lg 
+              shadow-md 
+              transition-all
+            "
           >
             Download SVG
           </button>
